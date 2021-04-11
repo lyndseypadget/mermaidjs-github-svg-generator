@@ -12,6 +12,4 @@
 1. `npm run build`
 
 ## Diagrams available
-1. [testFlowDiagram](generated/testFlowDiagram/README.md)
-1. [testMultipleDiagrams](generated/testMultipleDiagrams/README.md)
-1. [testSequenceDiagram](generated/testSequenceDiagram/README.md)
+1. [testDiagrams](generated/testDiagrams/README.md)
