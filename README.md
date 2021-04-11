@@ -12,6 +12,6 @@
 1. `npm run build`
 
 ## Diagrams available
-1. [githubSequenceDiagrams](generated/githubSequenceDiagrams/README.md)
 1. [testFlowDiagram](generated/testFlowDiagram/README.md)
+1. [testMultipleDiagrams](generated/testMultipleDiagrams/README.md)
 1. [testSequenceDiagram](generated/testSequenceDiagram/README.md)
