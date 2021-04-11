@@ -55,7 +55,7 @@ function generateReadMe(filesToProcess) {
             readmeContents += `![Image of ${fileNameOnly}](./${fileNameOnly}.svg?sanitize=true)`+'\n';
         });
         readmeFiles.push({path : `${newDestinationDirectory}/README.md`, contents : readmeContents});
-        apprendRootReadMe(directory);
+        appendToRootReadme(directory);
     });
 
     return readmeFiles;
@@ -64,13 +64,13 @@ function generateReadMe(filesToProcess) {
 function levelSetRootReadMe() {
     let rootReadmeFile = 'README.md';
 
-    var data = fs.readFileSync(rootReadmeFile, 'utf-8');
-    var newValue = data.replace(/1\. \[.*\]\(generated\/.*\/README\.md\)\n/gm, '');
-    fs.writeFileSync(rootReadmeFile, newValue, 'utf-8');
+    var rootReadmeData = fs.readFileSync(rootReadmeFile, 'utf-8');
+    var newRootReadmeData = rootReadmeData.replace(/1\. \[.*\]\(generated\/.*\/README\.md\)\n/gm, '');
+    fs.writeFileSync(rootReadmeFile, newRootReadmeData, 'utf-8');
 
 }
 
-function apprendRootReadMe(generatedFolderName) {
+function appendToRootReadme(generatedFolderName) {
     let rootReadmeFile = 'README.md';
     let contentToAppend = `1. [${generatedFolderName}](generated/${generatedFolderName}/README.md)`+'\n';
     fs.writeFileSync(rootReadmeFile,contentToAppend,{encoding:'utf8',flag:'a'});
