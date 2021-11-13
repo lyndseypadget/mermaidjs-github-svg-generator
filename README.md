@@ -1,4 +1,4 @@
-# org-psychology
+# mermaidjs-github-svg-generator
 
 ## Prerequisites / considerations
 

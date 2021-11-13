@@ -1,5 +1,5 @@
 {
-  "name": "org-psychology",
+  "name": "mermaidjs-github-svg-generator",
   "version": "1.0.0",
   "description": "A project to generate the sequence diagrams explaining the tokenisation flows",
   "main": "build.js",
